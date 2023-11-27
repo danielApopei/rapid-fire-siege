@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(../fonts/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: RobotoBlack;
+    src: url(../fonts/roboto/Roboto-Black.ttf);
+}
+
+:root{
+    --TEXTCOLOR: #eee;
+    --BACKCOLOR: #222;
+    --BACKCOLOR2: #333;
+    --HOVERLINKBACKCOLOR: #eee;
+    --HOVERLINKCOLOR: #222;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--BACKCOLOR2);
+    padding: 1rem;
+}
+
+nav img{
+    height: 2rem;
+}
+
+.navlink{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    color: var(--TEXTCOLOR);
+    font-family: RobotoLight;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.1s linear;
+    height: 100%;
+}
+
+.navlink{
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+.navhomelink {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    color: var(--TEXTCOLOR);
+    font-size: 1.2rem;
+    text-decoration: none;
+    height: 100%;
+    font-family: RobotoBlack;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+}
+
+.navlink:hover{
+    color: var(--HOVERLINKCOLOR);
+    background-color: var(--HOVERLINKBACKCOLOR);
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+body{
+    color: var(--TEXTCOLOR);
+    background-color: var(--BACKCOLOR);
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+main{
+    padding: 2rem;
+}
+
+@media screen and (min-width: 481px) {
+    /* nothing so far? */
+    nav{
+        display: grid;
+        gap: 0;
+        grid-template-columns: 15% 5fr 5fr 5fr 5fr 5fr 3fr;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--BACKCOLOR2);
+        height: 4rem;
+        padding: 0 0 0 0rem
+    }
+    .navlink{
+        border: none;
+    }
+
+}

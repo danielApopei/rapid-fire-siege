@@ -57,6 +57,7 @@ nav img{
 .navlink{
     border: 1px solid white;
     padding: 1rem;
+    
 }
 
 .navhomelink {
@@ -90,8 +91,15 @@ main{
     padding: 2rem;
 }
 
+p{
+    margin-top: 1rem;
+}
+
+.pagetitle{
+    display: inline-block;
+}
+
 @media screen and (min-width: 481px) {
-    /* nothing so far? */
     nav{
         display: grid;
         gap: 0;
@@ -105,5 +113,7 @@ main{
     .navlink{
         border: none;
     }
-
+    .pagetitle{
+        font-size: 4rem;
+    }
 }

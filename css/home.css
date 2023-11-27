@@ -1,0 +1,15 @@
+:root{
+    --BIGTEXTCOLOR: #F82;
+}
+
+#bigtext{
+    display: inline-block;
+    color: var(--BIGTEXTCOLOR);
+}
+
+
+@media screen and (min-width: 481px) {
+    #bigtext{
+        font-size: 5rem;
+    }
+}

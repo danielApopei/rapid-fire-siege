@@ -99,6 +99,14 @@ p{
     display: inline-block;
 }
 
+h2{
+    margin-top: 1rem;
+}
+
+ul {
+    margin: 1rem 2rem;
+}
+
 @media screen and (min-width: 481px) {
     nav{
         display: grid;

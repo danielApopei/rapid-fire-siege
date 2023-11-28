@@ -63,8 +63,24 @@
     border: 2px solid transparent;
 }
 
-
 @media screen and (min-width: 481px) {
+    .operators-section{
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+    .attack-grid, .defense-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .attack-grid, .defense-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .operators-section{
         grid-template-columns: 1fr 1fr;
         gap: 4rem;

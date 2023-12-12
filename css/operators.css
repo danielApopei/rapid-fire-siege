@@ -1,17 +1,18 @@
-.operators-section{
+.operators-section {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
 }
 
-.operator-type{
+.operator-type {
     display: inline-block;
     font-weight: bold;
     font-style: italic;
     font-size: 3rem;
 }
 
-.attack-half, .defense-half{
+.attack-half,
+.defense-half {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -20,41 +21,41 @@
     transition: all 0.2s linear;
 }
 
-.attack-half:hover{
+.attack-half:hover {
     background-color: rgba(65, 105, 225, 0.15);
 }
 
-.defense-half:hover{
+.defense-half:hover {
     background-color: rgba(255, 166, 0, 0.15);
 }
 
-.attack-grid{
+.attack-grid {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0.1rem;
 }
 
-.attack-grid .operator-link:hover{
+.attack-grid .operator-link:hover {
     border: 2px solid royalblue;
     background-color: rgba(65, 105, 225, 0.242);
     transition: 0.1s all linear;
 }
 
-.defense-grid{
+.defense-grid {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0.1rem;
 }
 
-.defense-grid .operator-link:hover{
+.defense-grid .operator-link:hover {
     border: 2px solid orange;
     background-color: rgba(255, 166, 0, 0.242);
     transition: 0.1s all linear;
 }
 
-.operator-link{
+.operator-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,37 +65,42 @@
 }
 
 @media screen and (min-width: 481px) {
-    .operators-section{
+    .operators-section {
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
     }
-    .attack-grid, .defense-grid{
+
+    .attack-grid,
+    .defense-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
 
 @media screen and (min-width: 600px) {
-    .attack-grid, .defense-grid{
+
+    .attack-grid,
+    .defense-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .operators-section{
+    .operators-section {
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
     }
 
-    .attack-half, .defense-half{
+    .attack-half,
+    .defense-half {
         padding: 1rem;
     }
 
-    .attack-grid{
+    .attack-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
-    .defense-grid{
+    .defense-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }

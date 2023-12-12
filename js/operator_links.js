@@ -11,6 +11,7 @@ function initApp() {
         const operatorName = operatorLink.id.split("-")[0];
         console.log(operatorName);
         operatorLink.style.backgroundImage = `url(./img/operators/${operatorName}.svg)`;
+        operatorLink.style.backgroundSize = "cover";
         operatorLink.addEventListener("hover", (operatorLink) => {
             console.log(operatorName);
             operatorLink.textContent = operatorName.toUpperCase();

@@ -1,15 +1,23 @@
-:root{
+:root {
     --BIGTEXTCOLOR: #F82;
 }
 
-#bigtext{
+#bigtext {
     display: inline-block;
     color: var(--BIGTEXTCOLOR);
 }
 
 
 @media screen and (min-width: 481px) {
-    #bigtext{
+    #bigtext {
         font-size: 5rem;
     }
+}
+
+a {
+    color: gray;
+}
+
+a:hover {
+    color: white;
 }

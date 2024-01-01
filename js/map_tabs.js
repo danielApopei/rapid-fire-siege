@@ -9,7 +9,7 @@ function initApp() {
     const tabs = document.querySelectorAll(".tab");
     tabs.forEach((tab => {
         if(tab.id === "1")
-            tab.style.display="flex";
+            tab.style.display="block";
         else
             tab.style.display = "none";
     }));
@@ -20,7 +20,7 @@ function initApp() {
             const tabs = document.querySelectorAll(".tab");
             tabs.forEach((tab => {
                 if(tab.id === thisId)
-                    tab.style.display="flex";
+                    tab.style.display="block";
                 else
                     tab.style.display = "none";
             }));
